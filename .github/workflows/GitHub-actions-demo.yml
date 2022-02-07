@@ -10,3 +10,6 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.1
+
